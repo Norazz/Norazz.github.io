@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>bash | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="bash常用命令pwd(print working directory): 打印当前目录路径全名称ls(list): 列举当前目录(文件夹)下面的所有子文件和文件夹 -a 显示隐藏文件及文件夹 -l 显示详细信息 -al 组合实用，可同时生效. 表示当前目录.. 表示上一级目录cd(change directory)切换当前位于的文件夹mkdir 新建文件夹 mkdir 文件夹名称 mkdir 文">
+<meta name="keywords" content="计算机,实用">
+<meta property="og:type" content="article">
+<meta property="og:title" content="bash">
+<meta property="og:url" content="http://yoursite.com/2017/06/06/bash/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="bash常用命令pwd(print working directory): 打印当前目录路径全名称ls(list): 列举当前目录(文件夹)下面的所有子文件和文件夹 -a 显示隐藏文件及文件夹 -l 显示详细信息 -al 组合实用，可同时生效. 表示当前目录.. 表示上一级目录cd(change directory)切换当前位于的文件夹mkdir 新建文件夹 mkdir 文件夹名称 mkdir 文">
+<meta property="og:updated_time" content="2017-06-06T12:50:04.968Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="bash">
+<meta name="twitter:description" content="bash常用命令pwd(print working directory): 打印当前目录路径全名称ls(list): 列举当前目录(文件夹)下面的所有子文件和文件夹 -a 显示隐藏文件及文件夹 -l 显示详细信息 -al 组合实用，可同时生效. 表示当前目录.. 表示上一级目录cd(change directory)切换当前位于的文件夹mkdir 新建文件夹 mkdir 文件夹名称 mkdir 文">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="bash 常用命令-bash" class="article article-type-bash 常用命令" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/06/06/bash/" class="article-date">
+  <time datetime="2017-06-06T12:20:45.000Z" itemprop="datePublished">2017-06-06</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      bash
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="bash常用命令"><a href="#bash常用命令" class="headerlink" title="bash常用命令"></a>bash常用命令</h4><h5 id="pwd-print-working-directory-打印当前目录路径全名称"><a href="#pwd-print-working-directory-打印当前目录路径全名称" class="headerlink" title="pwd(print working directory): 打印当前目录路径全名称"></a>pwd(print working directory): 打印当前目录路径全名称</h5><h5 id="ls-list-列举当前目录-文件夹-下面的所有子文件和文件夹"><a href="#ls-list-列举当前目录-文件夹-下面的所有子文件和文件夹" class="headerlink" title="ls(list): 列举当前目录(文件夹)下面的所有子文件和文件夹"></a>ls(list): 列举当前目录(文件夹)下面的所有子文件和文件夹</h5><ul>
+<li>-a 显示隐藏文件及文件夹</li>
+<li>-l 显示详细信息</li>
+<li>-al 组合实用，可同时生效<h5 id="表示当前目录"><a href="#表示当前目录" class="headerlink" title=". 表示当前目录"></a>. 表示当前目录</h5><h5 id="表示上一级目录"><a href="#表示上一级目录" class="headerlink" title=".. 表示上一级目录"></a>.. 表示上一级目录</h5><h5 id="cd-change-directory-切换当前位于的文件夹"><a href="#cd-change-directory-切换当前位于的文件夹" class="headerlink" title="cd(change directory)切换当前位于的文件夹"></a>cd(change directory)切换当前位于的文件夹</h5><h5 id="mkdir-新建文件夹"><a href="#mkdir-新建文件夹" class="headerlink" title="mkdir 新建文件夹"></a>mkdir 新建文件夹</h5></li>
+<li>mkdir 文件夹名称</li>
+<li>mkdir 文件夹1 文件夹2 可同时创建多个文件夹</li>
+<li>mkdir 文件夹/文件夹 在指定文件夹下创建文件夹</li>
+<li>mkdir 文件1/文件夹2 -p 若是文件夹1不存在也能创建成功<h5 id="rmdir-remove-directory-删除文件夹-只能删除空文件夹"><a href="#rmdir-remove-directory-删除文件夹-只能删除空文件夹" class="headerlink" title="rmdir(remove directory) 删除文件夹,只能删除空文件夹"></a>rmdir(remove directory) 删除文件夹,只能删除空文件夹</h5><h5 id="rm-rf-慎用-递归删除指定文件夹及文件"><a href="#rm-rf-慎用-递归删除指定文件夹及文件" class="headerlink" title="rm -rf(慎用) 递归删除指定文件夹及文件"></a>rm -rf(慎用) 递归删除指定文件夹及文件</h5></li>
+<li>-f 如果说要删除的文件、文件夹不存在，不会显示错误信息</li>
+<li>-r 递归删除(常用于删除非空文件夹)</li>
+<li>不能删除自身，也不能删除父目录（不能含有.和..），即不能删除所在的文件夹<h5 id="touch-新建文件"><a href="#touch-新建文件" class="headerlink" title="touch 新建文件"></a>touch 新建文件</h5></li>
+<li>需包含后缀名</li>
+<li>touch test1.txt test2.txt 可一次创建多个文件</li>
+<li>touch 文件夹/test1.txt 在指定文件夹下创建文件<h5 id="cp-复制指定文件"><a href="#cp-复制指定文件" class="headerlink" title="cp 复制指定文件"></a>cp 复制指定文件</h5></li>
+<li>cp 源文件的路径(文件夹+文件名) 新文件的路径(文件夹)</li>
+</ul>
+<h5 id="mv-移动指定文件-即剪切"><a href="#mv-移动指定文件-即剪切" class="headerlink" title="mv 移动指定文件,即剪切"></a>mv 移动指定文件,即剪切</h5><ul>
+<li>mv 源文件的路径(文件夹+文件名) 新文件的路径(文件夹)</li>
+<li>移动并重命名：mv 源文件的路径(文件夹+文件名) 新文件的路径(文件夹)+新文件名<h5 id="vi-编辑器"><a href="#vi-编辑器" class="headerlink" title="vi 编辑器"></a>vi 编辑器</h5></li>
+<li>vi 文件名：打开一个窗口，实现对该文件进行编辑</li>
+<li>进入编辑模式：i或者a键</li>
+<li>退出编辑模式：esc键</li>
+<li>保存编辑的内容：”:w”</li>
+<li>退出编辑：”:q”</li>
+<li>保存并退出：”:wq”</li>
+<li>ps：如果当前位于编辑模式，应该首先退出编辑模式，然后再实现保存or退出的功能</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/06/06/bash/" data-id="cj3lndzl80000f4vr3rc7ykg9" class="article-share-link">Delen</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/实用/">实用</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/计算机/">计算机</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/06/06/git-常用命令/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Nieuwer</strong>
+      <div class="article-nav-title">
+        
+          git 常用命令
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/06/06/。。。/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ouder</strong>
+      <div class="article-nav-title">。。。</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Labels</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js/">js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/前端/">前端</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/实用/">实用</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/计算机/">计算机</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/js/" style="font-size: 10px;">js</a> <a href="/tags/前端/" style="font-size: 10px;">前端</a> <a href="/tags/实用/" style="font-size: 10px;">实用</a> <a href="/tags/计算机/" style="font-size: 20px;">计算机</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archieven</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">June 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recente berichten</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/06/06/git-常用命令/">git 常用命令</a>
+          </li>
+        
+          <li>
+            <a href="/2017/06/06/bash/">bash</a>
+          </li>
+        
+          <li>
+            <a href="/2017/06/06/。。。/">。。。</a>
+          </li>
+        
+          <li>
+            <a href="/2017/06/06/我的js第一篇/">我的js第一篇</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

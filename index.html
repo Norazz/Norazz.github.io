@@ -50,7 +50,7 @@
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -60,6 +60,209 @@
 </header>
       <div class="outer">
         <section id="main">
+  
+    <article id="git常用命令-git-常用命令" class="article article-type-git常用命令" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/06/06/git-常用命令/" class="article-date">
+  <time datetime="2017-06-06T12:52:25.000Z" itemprop="datePublished">2017-06-06</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/06/06/git-常用命令/">git 常用命令</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="git-常用命令"><a href="#git-常用命令" class="headerlink" title="git 常用命令"></a>git 常用命令</h4><h5 id="git的作用"><a href="#git的作用" class="headerlink" title="git的作用"></a>git的作用</h5><ul>
+<li>源代码管理工具(版本控制)</li>
+<li>源利于团队开发</li>
+<li>对于个人开发–对某个功能的修改操作</li>
+</ul>
+<h5 id="其他前端代码管理工具"><a href="#其他前端代码管理工具" class="headerlink" title="其他前端代码管理工具"></a>其他前端代码管理工具</h5><ul>
+<li>svn</li>
+<li>maven vss tfs</li>
+</ul>
+<hr>
+<h5 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h5><p>  git init 在需要的文件夹下执行命令</p>
+<hr>
+<h5 id="向暂存区添加文件"><a href="#向暂存区添加文件" class="headerlink" title="向暂存区添加文件"></a>向暂存区添加文件</h5><ul>
+<li>git add 文件名 可以将新添加的和已修改的文件放到暂存区,☆注意☆：不包括删除<ul>
+<li>git add . 将仓库下面的没有被提交到暂存区的代码放到暂存区</li>
+<li>git add * 将当前仓库中的所有的没有被提交到暂存区的代码放到暂存区</li>
+<li>git add -u 或者 git add –update 将(修改和删除的文件)的操作告诉暂存区</li>
+<li>git add -A  或者 git add –all 将所有的修改与删除和未跟踪的文件都告诉暂存区。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h5 id="查看仓库文件中文件状态"><a href="#查看仓库文件中文件状态" class="headerlink" title="查看仓库文件中文件状态"></a>查看仓库文件中文件状态</h5><p>  git status</p>
+<hr>
+<h5 id="用户名和邮箱的配置"><a href="#用户名和邮箱的配置" class="headerlink" title="用户名和邮箱的配置"></a>用户名和邮箱的配置</h5><ul>
+<li>git config user.name xxx</li>
+<li>git config user.email xxx</li>
+<li>可以通过–global选项实现在本机一次配置多次使用</li>
+</ul>
+<hr>
+<h5 id="向主仓库添加文件"><a href="#向主仓库添加文件" class="headerlink" title="向主仓库添加文件"></a>向主仓库添加文件</h5><p>git commit -m 备注信息</p>
+<hr>
+<h5 id="上传代码到服务器"><a href="#上传代码到服务器" class="headerlink" title="上传代码到服务器"></a>上传代码到服务器</h5><p>git push 仓库地址 master</p>
+<hr>
+<h5 id="移除全局用户名"><a href="#移除全局用户名" class="headerlink" title="移除全局用户名"></a>移除全局用户名</h5><p>git config –global –unset user.name</p>
+<hr>
+<h5 id="将远程仓库的代码更新到本地"><a href="#将远程仓库的代码更新到本地" class="headerlink" title="将远程仓库的代码更新到本地"></a>将远程仓库的代码更新到本地</h5><p>git pull 服务器仓库地址 master</p>
+<hr>
+<h5 id="将本地仓库代码更新到服务器中"><a href="#将本地仓库代码更新到服务器中" class="headerlink" title="将本地仓库代码更新到服务器中"></a>将本地仓库代码更新到服务器中</h5><p>git push 服务器仓库地址 master</p>
+<hr>
+<h5 id="保存服务器地址"><a href="#保存服务器地址" class="headerlink" title="保存服务器地址"></a>保存服务器地址</h5><p>git remote add 名字 服务器地址</p>
+<hr>
+<h5 id="删除服务器地址"><a href="#删除服务器地址" class="headerlink" title="删除服务器地址"></a>删除服务器地址</h5><p>git remote remove 名字</p>
+<hr>
+<h5 id="查看以保存的服务器地址"><a href="#查看以保存的服务器地址" class="headerlink" title="查看以保存的服务器地址"></a>查看以保存的服务器地址</h5><p>git remote</p>
+<hr>
+<h5 id="上传代码的整个流程"><a href="#上传代码的整个流程" class="headerlink" title="上传代码的整个流程"></a>上传代码的整个流程</h5><ol>
+<li><p>如果某个服务器仓库是空仓库，想要提交代码，应该按照以下方式：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">git init</div><div class="line">touch 1.txt</div><div class="line">git add *</div><div class="line">git commit -m xxx</div><div class="line">git push xxx master</div></pre></td></tr></table></figure>
+</li>
+<li><p>如果某个仓库已经不是空仓库，想要提交代码，应该按照以下方式：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"> git pull 服务器仓库地址 master</div><div class="line"> git init</div><div class="line">touch 1.txt</div><div class="line">git add *</div><div class="line">git commit -m xxx</div><div class="line">git push xxx master</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<hr>
+<h5 id="克隆远程仓库代码"><a href="#克隆远程仓库代码" class="headerlink" title="克隆远程仓库代码"></a>克隆远程仓库代码</h5><p>git clone 远程仓库地址 master</p>
+<hr>
+<h5 id="设置文件不让git管理"><a href="#设置文件不让git管理" class="headerlink" title="设置文件不让git管理"></a>设置文件不让git管理</h5><p>在.git同级目录添加一个文件，叫 .gitignore</p>
+<ul>
+<li>创建没有文件名的文件<br>1 直接新建 “.gitignore.”<br>2 bash命令：touch .gitignore<ul>
+<li>打开.gitignore进行编辑，一行一行的添加不需要git管理的文件<br>1 可以设置同类型的文件：<em>.js </em>.css<br>2 也可以设置整个目录：<br>  a/<em> a目录下面的所有文件<br>  a/</em>.js a目录下面的所有js文件</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h5 id="删除服务器中的文件"><a href="#删除服务器中的文件" class="headerlink" title="删除服务器中的文件"></a>删除服务器中的文件</h5><ul>
+<li><p>方法一</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">rm 文件名</div><div class="line">git add 文件名</div><div class="line">git commit -m 提交</div><div class="line">git push 远程服务器 master</div></pre></td></tr></table></figure>
+</li>
+<li><p>方法二</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git rm 文件名</div><div class="line">git commit -m 提交</div><div class="line">git push 远程服务器 master</div></pre></td></tr></table></figure>
+<p><code>如果某个文件没有进入到本地仓库，也没有进入服务器仓库git rm 无法正常删除文件,git rm xxx -f 可以实现把文件删除</code></p>
+</li>
+</ul>
+<hr>
+<h5 id="打印日志"><a href="#打印日志" class="headerlink" title="打印日志"></a>打印日志</h5><p>git log </p>
+<h2 id="git-log-–oneline-每一次提交的-短-版本号，以及备注信息"><a href="#git-log-–oneline-每一次提交的-短-版本号，以及备注信息" class="headerlink" title="  * git log –oneline 每一次提交的(短)版本号，以及备注信息"></a>  * git log –oneline 每一次提交的(短)版本号，以及备注信息</h2><h5 id="版本操作"><a href="#版本操作" class="headerlink" title="版本操作"></a>版本操作</h5><p>git reset –hard 提交的版本号(可以只写前几位)</p>
+<hr>
+<h5 id="git-reglog"><a href="#git-reglog" class="headerlink" title="git reglog"></a>git reglog</h5><ul>
+<li>可查看：每一次提交的信息；以及每一次版本回滚的操作；分支切换操作</li>
+</ul>
+<h5 id="git分支操作"><a href="#git分支操作" class="headerlink" title="git分支操作"></a>git分支操作</h5><ul>
+<li>git branch 查看所有分支即当前分支</li>
+<li>git branch 分知名 在当前分支下创建新分支<ul>
+<li>新分支会继承当前分支到目前为止的所有代码</li>
+</ul>
+</li>
+<li>git checkout 切换分支<ul>
+<li>切换到指定的分支</li>
+</ul>
+</li>
+<li>git merge -m 分支名 备注信息<ul>
+<li>合并指定分支到当前分支</li>
+</ul>
+</li>
+<li>git branch -d 分支名<ul>
+<li>删除指定分支</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/06/06/git-常用命令/" data-id="cj3lndzlf0001f4vr204ltsjs" class="article-share-link">Delen</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/计算机/">计算机</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="bash 常用命令-bash" class="article article-type-bash 常用命令" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/06/06/bash/" class="article-date">
+  <time datetime="2017-06-06T12:20:45.000Z" itemprop="datePublished">2017-06-06</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/06/06/bash/">bash</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="bash常用命令"><a href="#bash常用命令" class="headerlink" title="bash常用命令"></a>bash常用命令</h4><h5 id="pwd-print-working-directory-打印当前目录路径全名称"><a href="#pwd-print-working-directory-打印当前目录路径全名称" class="headerlink" title="pwd(print working directory): 打印当前目录路径全名称"></a>pwd(print working directory): 打印当前目录路径全名称</h5><h5 id="ls-list-列举当前目录-文件夹-下面的所有子文件和文件夹"><a href="#ls-list-列举当前目录-文件夹-下面的所有子文件和文件夹" class="headerlink" title="ls(list): 列举当前目录(文件夹)下面的所有子文件和文件夹"></a>ls(list): 列举当前目录(文件夹)下面的所有子文件和文件夹</h5><ul>
+<li>-a 显示隐藏文件及文件夹</li>
+<li>-l 显示详细信息</li>
+<li>-al 组合实用，可同时生效<h5 id="表示当前目录"><a href="#表示当前目录" class="headerlink" title=". 表示当前目录"></a>. 表示当前目录</h5><h5 id="表示上一级目录"><a href="#表示上一级目录" class="headerlink" title=".. 表示上一级目录"></a>.. 表示上一级目录</h5><h5 id="cd-change-directory-切换当前位于的文件夹"><a href="#cd-change-directory-切换当前位于的文件夹" class="headerlink" title="cd(change directory)切换当前位于的文件夹"></a>cd(change directory)切换当前位于的文件夹</h5><h5 id="mkdir-新建文件夹"><a href="#mkdir-新建文件夹" class="headerlink" title="mkdir 新建文件夹"></a>mkdir 新建文件夹</h5></li>
+<li>mkdir 文件夹名称</li>
+<li>mkdir 文件夹1 文件夹2 可同时创建多个文件夹</li>
+<li>mkdir 文件夹/文件夹 在指定文件夹下创建文件夹</li>
+<li>mkdir 文件1/文件夹2 -p 若是文件夹1不存在也能创建成功<h5 id="rmdir-remove-directory-删除文件夹-只能删除空文件夹"><a href="#rmdir-remove-directory-删除文件夹-只能删除空文件夹" class="headerlink" title="rmdir(remove directory) 删除文件夹,只能删除空文件夹"></a>rmdir(remove directory) 删除文件夹,只能删除空文件夹</h5><h5 id="rm-rf-慎用-递归删除指定文件夹及文件"><a href="#rm-rf-慎用-递归删除指定文件夹及文件" class="headerlink" title="rm -rf(慎用) 递归删除指定文件夹及文件"></a>rm -rf(慎用) 递归删除指定文件夹及文件</h5></li>
+<li>-f 如果说要删除的文件、文件夹不存在，不会显示错误信息</li>
+<li>-r 递归删除(常用于删除非空文件夹)</li>
+<li>不能删除自身，也不能删除父目录（不能含有.和..），即不能删除所在的文件夹<h5 id="touch-新建文件"><a href="#touch-新建文件" class="headerlink" title="touch 新建文件"></a>touch 新建文件</h5></li>
+<li>需包含后缀名</li>
+<li>touch test1.txt test2.txt 可一次创建多个文件</li>
+<li>touch 文件夹/test1.txt 在指定文件夹下创建文件<h5 id="cp-复制指定文件"><a href="#cp-复制指定文件" class="headerlink" title="cp 复制指定文件"></a>cp 复制指定文件</h5></li>
+<li>cp 源文件的路径(文件夹+文件名) 新文件的路径(文件夹)</li>
+</ul>
+<h5 id="mv-移动指定文件-即剪切"><a href="#mv-移动指定文件-即剪切" class="headerlink" title="mv 移动指定文件,即剪切"></a>mv 移动指定文件,即剪切</h5><ul>
+<li>mv 源文件的路径(文件夹+文件名) 新文件的路径(文件夹)</li>
+<li>移动并重命名：mv 源文件的路径(文件夹+文件名) 新文件的路径(文件夹)+新文件名<h5 id="vi-编辑器"><a href="#vi-编辑器" class="headerlink" title="vi 编辑器"></a>vi 编辑器</h5></li>
+<li>vi 文件名：打开一个窗口，实现对该文件进行编辑</li>
+<li>进入编辑模式：i或者a键</li>
+<li>退出编辑模式：esc键</li>
+<li>保存编辑的内容：”:w”</li>
+<li>退出编辑：”:q”</li>
+<li>保存并退出：”:wq”</li>
+<li>ps：如果当前位于编辑模式，应该首先退出编辑模式，然后再实现保存or退出的功能</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/06/06/bash/" data-id="cj3lndzl80000f4vr3rc7ykg9" class="article-share-link">Delen</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/实用/">实用</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/计算机/">计算机</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
   
     <article id="期待后续更新-。。。" class="article article-type-期待后续更新" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -87,7 +290,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/06/06/。。。/" data-id="cj3lizsx40000w8vrrdunq52n" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/06/06/。。。/" data-id="cj3lndzln0003f4vrcxojn7ni" class="article-share-link">Delen</a>
       
       
     </footer>
@@ -439,7 +642,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/06/06/我的js第一篇/" data-id="cj3lizsxc0001w8vr3bxce1eo" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/06/06/我的js第一篇/" data-id="cj3lndzlq0004f4vr7rsd30ve" class="article-share-link">Delen</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/js/">js</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端/">前端</a></li></ul>
@@ -461,9 +664,9 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
+    <h3 class="widget-title">Labels</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/js/">js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/前端/">前端</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js/">js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/前端/">前端</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/实用/">实用</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/计算机/">计算机</a></li></ul>
     </div>
   </div>
 
@@ -473,14 +676,14 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/js/" style="font-size: 10px;">js</a> <a href="/tags/前端/" style="font-size: 10px;">前端</a>
+      <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/js/" style="font-size: 10px;">js</a> <a href="/tags/前端/" style="font-size: 10px;">前端</a> <a href="/tags/实用/" style="font-size: 10px;">实用</a> <a href="/tags/计算机/" style="font-size: 20px;">计算机</a>
     </div>
   </div>
 
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
+    <h3 class="widget-title">Archieven</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">June 2017</a></li></ul>
     </div>
@@ -490,9 +693,17 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">Recente berichten</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2017/06/06/git-常用命令/">git 常用命令</a>
+          </li>
+        
+          <li>
+            <a href="/2017/06/06/bash/">bash</a>
+          </li>
         
           <li>
             <a href="/2017/06/06/。。。/">。。。</a>
